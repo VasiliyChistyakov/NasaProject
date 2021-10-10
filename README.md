@@ -1,6 +1,6 @@
 # NasaProject
 
-Приложение использует API [NASA](https://api.nasa.gov), для получения снимков с Марса 
+Приложение использует API [NASA](https://api.nasa.gov)
 
 - URLSession
 - JSON
