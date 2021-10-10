@@ -7,6 +7,7 @@
 - MVC
 - UIKit
 - UICollectionView
+- SOLID
 
 
 <img src="https://user-images.githubusercontent.com/81886542/135909760-3e9508a1-7625-469d-b8b8-f405f3c13cd5.png" width="300" />
