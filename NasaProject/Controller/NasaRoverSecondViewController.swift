@@ -20,7 +20,7 @@ class NasaRoverSecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let image = photoGallery.imgSrc
-        networkFetchService.fetchImageNasa(url: image) { model in
+        networkFetchService.fecthImage(urlString: image) { model in
             DispatchQueue.main.async {
                 self.imageSecVc.image = model
                 self.nameLabel.text = self.photoGallery.camera.name
