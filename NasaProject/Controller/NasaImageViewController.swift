@@ -24,13 +24,6 @@ class NasaImageViewController: UIViewController {
                 }
             }
         }
-//        NetworkingManager.shared.fetchDataNasaImage(url: jsonNasa) { model in
-//            DispatchQueue.main.async {
-//                NetworkingManager.shared.fetchImageNasa(url: model.hdurl) { image in
-//                    self.imageNasaVc.image = image
-//                }
-//            }
-//        }
     }
 }
 

@@ -29,7 +29,6 @@ class NetworkDataFetcher: DataFetcher {
             let decode = self.decodeJson(type: T.self, from: data)
             response(decode)
         }
-        
     }
     
     func decodeJson<T:Decodable>(type: T.Type, from: Data?) -> T? {
