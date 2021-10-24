@@ -57,6 +57,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		333B06AF271F3B6C0083E7AD /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				336CDF18270ED64500A810D8 /* SceneDelegate.swift */,
+				336CDF16270ED64500A810D8 /* AppDelegate.swift */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		333B06B0271F3BB30083E7AD /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				336CDF1C270ED64500A810D8 /* Main.storyboard */,
+				336CDF21270ED64900A810D8 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		333B06B1271F3C0E0083E7AD /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				336CDF1F270ED64900A810D8 /* Assets.xcassets */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		336CDF0A270ED64500A810D8 = {
 			isa = PBXGroup;
 			children = (
@@ -76,13 +102,11 @@
 		336CDF15270ED64500A810D8 /* NasaProject */ = {
 			isa = PBXGroup;
 			children = (
-				336CDF18270ED64500A810D8 /* SceneDelegate.swift */,
-				336CDF16270ED64500A810D8 /* AppDelegate.swift */,
-				336CDF32270EE8B500A810D8 /* NetworkingServices */,
+				333B06AF271F3B6C0083E7AD /* Supports */,
 				336CDF2E270EE62000A810D8 /* Controller */,
-				336CDF1C270ED64500A810D8 /* Main.storyboard */,
-				336CDF1F270ED64900A810D8 /* Assets.xcassets */,
-				336CDF21270ED64900A810D8 /* LaunchScreen.storyboard */,
+				336CDF32270EE8B500A810D8 /* NetworkingServices */,
+				333B06B0271F3BB30083E7AD /* StoryBoards */,
+				333B06B1271F3C0E0083E7AD /* Source */,
 				336CDF24270ED64900A810D8 /* Info.plist */,
 			);
 			path = NasaProject;
@@ -94,9 +118,8 @@
 				333CD83C270F74B600DC2A56 /* NasaRoverSecondViewController.swift */,
 				333CD834270F69B500DC2A56 /* NasaRoverViewController.swift */,
 				336CDF2C270EDF9900A810D8 /* NasaImageViewController.swift */,
-				336CDF2A270ED7C300A810D8 /* CollectionViewCell.swift */,
-				333CD83A270F720200DC2A56 /* NasaRoverCollectionViewCell.swift */,
 				336CDF1A270ED64500A810D8 /* MainViewController.swift */,
+				33F1DCF5271C98A400B2221F /* Cells */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -119,6 +142,15 @@
 				33E3231D27130207001309FF /* NetworkDataFetcher.swift */,
 			);
 			path = NetworkingServices;
+			sourceTree = "<group>";
+		};
+		33F1DCF5271C98A400B2221F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				333CD83A270F720200DC2A56 /* NasaRoverCollectionViewCell.swift */,
+				336CDF2A270ED7C300A810D8 /* CollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,6 +388,7 @@
 				DEVELOPMENT_TEAM = BC7M4A2H3L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NasaProject/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Photo Library Access Warning";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -384,6 +417,7 @@
 				DEVELOPMENT_TEAM = BC7M4A2H3L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NasaProject/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Photo Library Access Warning";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

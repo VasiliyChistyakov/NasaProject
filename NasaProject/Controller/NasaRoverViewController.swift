@@ -15,12 +15,13 @@ class NasaRoverViewController: UIViewController {
     let countCell = 3
     let offset:CGFloat = 2.0
     var arrayPhoto: NasaRoverModel!
-    var networkFetchService = NetworkFetchService()
+    var networkFetchService: NetworkFetchService!
     
     @IBOutlet weak var NasaRovercollectionView: UICollectionView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        networkFetchService = NetworkFetchService()
         NasaRovercollectionView.dataSource = self
         NasaRovercollectionView.delegate = self
         
@@ -50,12 +51,6 @@ extension NasaRoverViewController: UICollectionViewDataSource, UICollectionViewD
                 cell.nasaImage.image = image
             }
         }
-        
-//        NetworkingManager.shared.fecthImage(urlString: image) { image in
-//            DispatchQueue.main.async {
-//                cell.nasaImage.image = image
-//            }
-//        }
         return cell
     }
     

@@ -15,10 +15,11 @@ class NasaRoverSecondViewController: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     
     var photoGallery: Photo!
-    var networkFetchService = NetworkFetchService()
+    var networkFetchService: NetworkFetchService!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        networkFetchService  = NetworkFetchService()
         let image = photoGallery.imgSrc
         networkFetchService.fecthImage(urlString: image) { model in
             DispatchQueue.main.async {

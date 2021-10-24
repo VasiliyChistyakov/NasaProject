@@ -42,5 +42,4 @@ class NetworkFetchService {
             }
         }.resume()
     }
-    
 }
