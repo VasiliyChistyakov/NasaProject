@@ -4,7 +4,6 @@
 
 - URLSession
 - JSON
-- MVVM
 - UIKit
 - UICollectionView
 - SOLID
